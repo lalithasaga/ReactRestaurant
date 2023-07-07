@@ -1,0 +1,38 @@
+.meals {
+  max-width: 60rem;
+  width: 90%;
+  margin: 2rem auto;
+  background-color: rgb(249, 245, 245);
+  border-radius: 10px; 
+  animation: meals-appear 1s ease-out forwards;
+}
+  
+ .meals ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(165, 206, 135);
+  }
+
+  .meals li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #cad2c5;
+    box-shadow: 0 2px 8px rgba(105, 69, 69, 0.25);
+    border-radius: 5px; 
+  } 
+  
+  @keyframes meals-appear {
+    from {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
